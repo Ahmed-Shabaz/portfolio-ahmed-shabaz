@@ -6,7 +6,6 @@ import {
   BriefcaseBusiness,
   Code2,
   Download,
-  Github,
   GraduationCap,
   Linkedin,
   Mail,
@@ -199,7 +198,6 @@ function Index() {
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg"><a href="mailto:shabazmys7@gmail.com"><Mail /> Email me</a></Button>
           <Button asChild variant="outline" size="lg"><a href="https://linkedin.com/in/shabaz-ahmed-1163a021a" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
-          <Button asChild variant="outline" size="lg"><a href="https://github.com/" target="_blank" rel="noreferrer"><Github /> GitHub</a></Button>
         </div>
       </section>
 
