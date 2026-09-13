@@ -6,6 +6,7 @@ import {
   BriefcaseBusiness,
   Code2,
   Download,
+  Github,
   GraduationCap,
   Linkedin,
   Mail,
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
+import photoAsset from "@/assets/shabaz-ahmed.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
