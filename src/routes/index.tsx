@@ -202,7 +202,8 @@ function Index() {
         <h2 className="mt-7 max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg"><a href="mailto:shabazmys7@gmail.com"><Mail /> Email me</a></Button>
-          <Button asChild variant="outline" size="lg"><a href="https://linkedin.com/in/shabaz-ahmed-1163a021a" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
+          <Button asChild variant="outline" size="lg"><a href="https://www.linkedin.com/in/shabaz-ahmed-1163a021a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
+          <Button asChild variant="outline" size="lg"><a href="https://github.com/Ahmed-Shabaz" target="_blank" rel="noreferrer"><Github /> Follow on GitHub</a></Button>
         </div>
       </section>
 
