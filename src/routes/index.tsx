@@ -101,8 +101,11 @@ function Index() {
         </h1>
         <div className="mt-10 grid gap-8 border-t border-border pt-8 lg:grid-cols-[1fr_1.4fr]">
           <div>
+            <div className="mb-6 size-24 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-28">
+              <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
+            </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, Karnataka, India</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, India</p>
           </div>
           <div>
             <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
