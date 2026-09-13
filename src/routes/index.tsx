@@ -6,6 +6,7 @@ import {
   BriefcaseBusiness,
   Code2,
   Download,
+  Github,
   GraduationCap,
   Linkedin,
   Mail,
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
+import photoAsset from "@/assets/shabaz-ahmed.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -99,8 +101,11 @@ function Index() {
         </h1>
         <div className="mt-10 grid gap-8 border-t border-border pt-8 lg:grid-cols-[1fr_1.4fr]">
           <div>
+            <div className="mb-6 size-24 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-28">
+              <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
+            </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, Karnataka, India</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, India</p>
           </div>
           <div>
             <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
@@ -197,7 +202,8 @@ function Index() {
         <h2 className="mt-7 max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg"><a href="mailto:shabazmys7@gmail.com"><Mail /> Email me</a></Button>
-          <Button asChild variant="outline" size="lg"><a href="https://linkedin.com/in/shabaz-ahmed-1163a021a" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
+          <Button asChild variant="outline" size="lg"><a href="https://www.linkedin.com/in/shabaz-ahmed-1163a021a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
+          <Button asChild variant="outline" size="lg"><a href="https://github.com/Ahmed-Shabaz" target="_blank" rel="noreferrer"><Github /> Follow on GitHub</a></Button>
         </div>
       </section>
 
