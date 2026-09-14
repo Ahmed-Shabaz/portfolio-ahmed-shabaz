@@ -11,7 +11,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Terminal,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
@@ -87,10 +86,7 @@ function Index() {
   return (
     <main className="min-h-screen overflow-hidden bg-background/95 text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
-          <a href="#top" className="font-display text-lg font-bold text-foreground" aria-label="Shabaz Ahmed home">
-            SA<span className="text-primary">.</span>
-          </a>
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-end gap-7 px-5 lg:px-8">
           <nav className="hidden items-center gap-7 font-mono text-xs text-muted-foreground md:flex" aria-label="Main navigation">
             <a className="transition-colors hover:text-primary" href="#work">Work</a>
             <a className="transition-colors hover:text-primary" href="#experience">Experience</a>
@@ -112,11 +108,12 @@ function Index() {
         </h1>
         <div className="mt-10 grid w-full gap-8 border-t border-border pt-8 text-left lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <div className="mb-6 size-24 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-28">
+            <div className="mb-6 size-32 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-40 lg:size-48">
               <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
             </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, India</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, Bangalore India • Remote • Open to Relocation</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-primary"><BriefcaseBusiness className="size-4" /> 4+ years of experience</p>
             <a href="mailto:shabazmys7@gmail.com" className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
               <Mail className="size-4" /> shabazmys7@gmail.com
             </a>
@@ -145,7 +142,7 @@ function Index() {
       </section>
 
       <section id="work" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <SectionHeading index="01" title="Selected systems" text="Practical engineering built around speed, accuracy, and operational continuity." />
+        <SectionHeading title="Featured Projects" text="Practical engineering built around speed, accuracy, and operational continuity." />
         <div className="mt-14 grid gap-px border border-border bg-border md:grid-cols-2">
           {projects.map((project) => (
             <article key={project.number} className="group min-h-80 bg-card p-7 transition-colors hover:bg-secondary/80 sm:p-9">
@@ -165,7 +162,7 @@ function Index() {
 
       <section id="experience" className="border-y border-border bg-card/85 py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading index="02" title="Experience" text="Building production automation at the intersection of Python, data, and operations." />
+          <SectionHeading title="Experience" text="Building production automation at the intersection of Python, data, and operations." />
           <div className="mt-14 grid gap-10 border-t border-border pt-10 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <p className="section-kicker">Aug 2022 — Present</p>
@@ -183,7 +180,7 @@ function Index() {
       </section>
 
       <section id="skills" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <SectionHeading index="03" title="Technical toolkit" text="A practical stack for automating browsers, data, documents, internal tools, and visual inspection." />
+        <SectionHeading title="Technical toolkit" text="A practical stack for automating browsers, data, documents, internal tools, and visual inspection." />
         <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group, index) => (
             <div key={group.label} className="bg-background p-7">
@@ -212,8 +209,7 @@ function Index() {
       </section>
 
       <section id="contact" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <p className="section-kicker">04 / Let&apos;s connect</p>
-        <h2 className="mt-7 max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
+        <h2 className="max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg"><a href="mailto:shabazmys7@gmail.com"><Mail /> Email me</a></Button>
           <Button asChild variant="outline" size="lg"><a href="https://www.linkedin.com/in/shabaz-ahmed-1163a021a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
@@ -222,16 +218,16 @@ function Index() {
       </section>
 
       <footer className="border-t border-border bg-card/85">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 font-mono text-[11px] uppercase text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <span>© 2026 Shabaz Ahmed</span><span className="flex items-center gap-2"><Terminal className="size-3.5 text-primary" /> Designed for reliable execution</span>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-7 font-mono text-[11px] uppercase text-muted-foreground lg:px-8">
+          <span>© 2026 Shabaz Ahmed</span>
         </div>
       </footer>
     </main>
   );
 }
 
-function SectionHeading({ index, title, text }: { index: string; title: string; text: string }) {
-  return <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end"><div><p className="section-kicker">{index} / Portfolio</p><h2 className="mt-5 font-display text-4xl font-semibold sm:text-6xl">{title}<span className="text-primary">.</span></h2></div><p className="max-w-xl text-lg leading-8 text-muted-foreground">{text}</p></div>;
+function SectionHeading({ title, text }: { title: string; text: string }) {
+  return <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end"><div><h2 className="font-display text-4xl font-semibold sm:text-6xl">{title}<span className="text-primary">.</span></h2></div><p className="max-w-xl text-lg leading-8 text-muted-foreground">{text}</p></div>;
 }
 
 function ExperienceItem({ text }: { text: string }) {
