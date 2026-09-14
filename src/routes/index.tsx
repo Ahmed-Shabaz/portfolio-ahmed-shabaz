@@ -135,7 +135,7 @@ function Index() {
 
       <section className="border-y border-border bg-card/80">
         <div className="mx-auto grid max-w-7xl grid-cols-2 lg:grid-cols-4">
-          {[["3+", "Years experience"], ["100+", "Websites automated"], ["70%", "Manual effort reduced"], ["99%", "Pipeline uptime"]].map(([value, label]) => (
+          {[["4+", "Years experience"], ["100+", "Websites automated"], ["70%", "Manual effort reduced"], ["99%", "Pipeline uptime"]].map(([value, label]) => (
             <div key={label} className="border-b border-r border-border p-6 last:border-r-0 sm:p-8 lg:border-b-0">
               <p className="font-display text-4xl font-semibold text-primary sm:text-5xl">{value}</p>
               <p className="mt-2 font-mono text-[11px] uppercase text-muted-foreground">{label}</p>
