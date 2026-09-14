@@ -1,12 +1,13 @@
-# Portfolio Tasks
+# Portfolio Update Roadmap
 
-- [ ] Center name on one line (done)
-- [ ] Remove SYS.STATUS block (done)
-- [ ] Update experience metric to 4+ years (done)
-- [ ] Add Gmail prominently in hero (done)
-- [ ] Remove footer "Designed for reliable execution" and header "SA." logo
-- [ ] Update location text to "Mysore, Bangalore India • Remote • Open to Relocation"
-- [ ] Enlarge hero photo
-- [ ] Replace "Selected systems" heading with "Featured Projects"
-- [ ] Remove section index labels like "01 / Portfolio", "02 / Portfolio"
-- [ ] Publish updated site
+- [x] Center name on one line
+- [x] Remove right-side `SYS.STATUS // ONLINE` block
+- [x] Update metric to "4+" years
+- [x] Add Gmail link in hero
+- [x] Remove `SA.` logo from header
+- [x] Remove footer tagline "Designed for reliable execution, SA."
+- [x] Update location to "Mysore, Bangalore India • Remote • Open to Relocation"
+- [x] Make hero photo larger
+- [x] Rename work section heading to "Featured Projects"
+- [x] Remove "01 / Portfolio" style section labels
+- [x] Publish updated site
