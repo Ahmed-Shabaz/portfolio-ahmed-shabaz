@@ -181,7 +181,7 @@ function Index() {
       </section>
 
       <section id="skills" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <SectionHeading index="03" title="Technical toolkit" text="A practical stack for automating browsers, data, documents, internal tools, and visual inspection." />
+        <SectionHeading title="Technical toolkit" text="A practical stack for automating browsers, data, documents, internal tools, and visual inspection." />
         <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group, index) => (
             <div key={group.label} className="bg-background p-7">
