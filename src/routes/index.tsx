@@ -210,8 +210,7 @@ function Index() {
       </section>
 
       <section id="contact" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <p className="section-kicker">04 / Let&apos;s connect</p>
-        <h2 className="mt-7 max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
+        <h2 className="max-w-4xl font-display text-5xl font-semibold leading-tight sm:text-7xl">Have a repetitive process? Let&apos;s automate it<span className="text-primary">.</span></h2>
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg"><a href="mailto:shabazmys7@gmail.com"><Mail /> Email me</a></Button>
           <Button asChild variant="outline" size="lg"><a href="https://www.linkedin.com/in/shabaz-ahmed-1163a021a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a></Button>
