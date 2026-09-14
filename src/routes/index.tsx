@@ -219,8 +219,8 @@ function Index() {
       </section>
 
       <footer className="border-t border-border bg-card/85">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 font-mono text-[11px] uppercase text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <span>© 2026 Shabaz Ahmed</span><span className="flex items-center gap-2"><Terminal className="size-3.5 text-primary" /> Designed for reliable execution</span>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-7 font-mono text-[11px] uppercase text-muted-foreground lg:px-8">
+          <span>© 2026 Shabaz Ahmed</span>
         </div>
       </footer>
     </main>
