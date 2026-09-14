@@ -109,11 +109,12 @@ function Index() {
         </h1>
         <div className="mt-10 grid w-full gap-8 border-t border-border pt-8 text-left lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <div className="mb-6 size-24 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-28">
+            <div className="mb-6 size-32 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-40 lg:size-48">
               <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
             </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
-            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, India</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, Bangalore India • Remote • Open to Relocation</p>
+            <p className="mt-2 flex items-center gap-2 text-sm text-primary"><BriefcaseBusiness className="size-4" /> 4+ years of experience</p>
             <a href="mailto:shabazmys7@gmail.com" className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
               <Mail className="size-4" /> shabazmys7@gmail.com
             </a>
