@@ -227,8 +227,8 @@ function Index() {
   );
 }
 
-function SectionHeading({ index, title, text }: { index: string; title: string; text: string }) {
-  return <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end"><div><p className="section-kicker">{index} / Portfolio</p><h2 className="mt-5 font-display text-4xl font-semibold sm:text-6xl">{title}<span className="text-primary">.</span></h2></div><p className="max-w-xl text-lg leading-8 text-muted-foreground">{text}</p></div>;
+function SectionHeading({ title, text }: { title: string; text: string }) {
+  return <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end"><div><h2 className="font-display text-4xl font-semibold sm:text-6xl">{title}<span className="text-primary">.</span></h2></div><p className="max-w-xl text-lg leading-8 text-muted-foreground">{text}</p></div>;
 }
 
 function ExperienceItem({ text }: { text: string }) {
