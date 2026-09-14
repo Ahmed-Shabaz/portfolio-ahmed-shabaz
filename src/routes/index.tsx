@@ -11,7 +11,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Terminal,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
