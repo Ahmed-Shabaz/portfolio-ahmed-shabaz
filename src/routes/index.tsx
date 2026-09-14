@@ -163,7 +163,7 @@ function Index() {
 
       <section id="experience" className="border-y border-border bg-card/85 py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading index="02" title="Experience" text="Building production automation at the intersection of Python, data, and operations." />
+          <SectionHeading title="Experience" text="Building production automation at the intersection of Python, data, and operations." />
           <div className="mt-14 grid gap-10 border-t border-border pt-10 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <p className="section-kicker">Aug 2022 — Present</p>
