@@ -103,23 +103,23 @@ function Index() {
         </div>
       </header>
 
-      <section id="top" className="relative mx-auto flex min-h-[94vh] max-w-7xl flex-col justify-end px-5 pb-16 pt-32 lg:px-8 lg:pb-24">
-        <div className="pointer-events-none absolute right-8 top-28 hidden font-mono text-[11px] leading-6 text-muted-foreground/40 lg:block" aria-hidden="true">
-          <p>SYS.STATUS // ONLINE</p><p>LOCATION // MYSORE, IN</p><p>FOCUS // AUTOMATION</p>
-        </div>
+      <section id="top" className="relative mx-auto flex min-h-[94vh] max-w-7xl flex-col items-center justify-end px-5 pb-16 pt-32 text-center lg:px-8 lg:pb-24">
         <div className="mb-8 flex items-center gap-3 font-mono text-xs uppercase text-primary">
           <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_18px_var(--color-primary)]" /> Available for opportunities
         </div>
-        <h1 className="max-w-6xl font-display text-6xl font-semibold leading-[0.9] sm:text-7xl lg:text-[8.5rem]">
-          Shabaz<br /><span className="text-muted-foreground">Ahmed</span><span className="text-primary">.</span>
+        <h1 className="whitespace-nowrap font-display text-5xl font-semibold leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem]">
+          Shabaz <span className="text-muted-foreground">Ahmed</span><span className="text-primary">.</span>
         </h1>
-        <div className="mt-10 grid gap-8 border-t border-border pt-8 lg:grid-cols-[1fr_1.4fr]">
+        <div className="mt-10 grid w-full gap-8 border-t border-border pt-8 text-left lg:grid-cols-[1fr_1.4fr]">
           <div>
             <div className="mb-6 size-24 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-28">
               <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
             </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
             <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><MapPin className="size-4" /> Mysore, India</p>
+            <a href="mailto:shabazmys7@gmail.com" className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
+              <Mail className="size-4" /> shabazmys7@gmail.com
+            </a>
           </div>
           <div>
             <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
@@ -135,7 +135,7 @@ function Index() {
 
       <section className="border-y border-border bg-card/80">
         <div className="mx-auto grid max-w-7xl grid-cols-2 lg:grid-cols-4">
-          {[["3+", "Years experience"], ["100+", "Websites automated"], ["70%", "Manual effort reduced"], ["99%", "Pipeline uptime"]].map(([value, label]) => (
+          {[["4+", "Years experience"], ["100+", "Websites automated"], ["70%", "Manual effort reduced"], ["99%", "Pipeline uptime"]].map(([value, label]) => (
             <div key={label} className="border-b border-r border-border p-6 last:border-r-0 sm:p-8 lg:border-b-0">
               <p className="font-display text-4xl font-semibold text-primary sm:text-5xl">{value}</p>
               <p className="mt-2 font-mono text-[11px] uppercase text-muted-foreground">{label}</p>
