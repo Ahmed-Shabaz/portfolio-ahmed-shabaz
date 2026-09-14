@@ -87,10 +87,7 @@ function Index() {
   return (
     <main className="min-h-screen overflow-hidden bg-background/95 text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
-          <a href="#top" className="font-display text-lg font-bold text-foreground" aria-label="Shabaz Ahmed home">
-            SA<span className="text-primary">.</span>
-          </a>
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-end gap-7 px-5 lg:px-8">
           <nav className="hidden items-center gap-7 font-mono text-xs text-muted-foreground md:flex" aria-label="Main navigation">
             <a className="transition-colors hover:text-primary" href="#work">Work</a>
             <a className="transition-colors hover:text-primary" href="#experience">Experience</a>
