@@ -143,7 +143,7 @@ function Index() {
       </section>
 
       <section id="work" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
-        <SectionHeading index="01" title="Selected systems" text="Practical engineering built around speed, accuracy, and operational continuity." />
+        <SectionHeading title="Featured Projects" text="Practical engineering built around speed, accuracy, and operational continuity." />
         <div className="mt-14 grid gap-px border border-border bg-border md:grid-cols-2">
           {projects.map((project) => (
             <article key={project.number} className="group min-h-80 bg-card p-7 transition-colors hover:bg-secondary/80 sm:p-9">
