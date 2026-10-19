@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from "@tanstack/react-router";
+import { lazy, Suspense } from "react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -82,9 +83,16 @@ const skillGroups = [
   { label: "Vision & Tools", items: ["OpenCV", "YOLOv8", "EasyOCR", "Git", "GitHub", "Tkinter"] },
 ];
 
+const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
+
 function Index() {
   return (
-    <main className="min-h-screen overflow-hidden bg-background/95 text-foreground">
+    <main className="relative isolate min-h-screen overflow-hidden bg-background/60 text-foreground">
+      <ClientOnly>
+        <Suspense fallback={null}>
+          <NetworkBackground />
+        </Suspense>
+      </ClientOnly>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-end gap-7 px-5 lg:px-8">
           <nav className="hidden items-center gap-7 font-mono text-xs text-muted-foreground md:flex" aria-label="Main navigation">
