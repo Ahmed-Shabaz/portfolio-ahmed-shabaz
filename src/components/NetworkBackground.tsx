@@ -15,7 +15,7 @@ function readColor(name: string, fallback: string) {
     const rgb = getComputedStyle(probe).color;
     probe.remove();
     const m = rgb.match(/[\d.]+/g);
-    if (m && rgb.startsWith("rgb")) c.setRGB(+m[0] / 255, +m[1] / 255, +m[2] / 255);
+    if (m && rgb.startsWith("rgb")) c.setRGB(Number(m[0]) / 255, Number(m[1]) / 255, Number(m[2]) / 255);
     else c.set(fallback);
   } catch {
     c.set(fallback);
@@ -38,7 +38,7 @@ function Network() {
     const linePos: number[] = [];
     for (let i = 0; i < COUNT; i++)
       for (let j = i + 1; j < COUNT; j++)
-        if (pts[i].distanceTo(pts[j]) < LINK_DIST) linePos.push(...pts[i].toArray(), ...pts[j].toArray());
+        { const a = pts[i]!, b = pts[j]!; if (a.distanceTo(b) < LINK_DIST) linePos.push(...a.toArray(), ...b.toArray()); }
     const pg = new THREE.BufferGeometry().setFromPoints(pts);
     const lg = new THREE.BufferGeometry();
     lg.setAttribute("position", new THREE.Float32BufferAttribute(linePos, 3));
