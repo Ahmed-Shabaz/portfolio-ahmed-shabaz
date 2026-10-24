@@ -15,7 +15,21 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
-import photoAsset from "@/assets/shabaz-ahmed.jpg.asset.json";
+import photoAsset from "@/assets/shabaz-ahmed.png.asset.json";
+import certTapPdf from "@/assets/shabaz-cert-tap.asset.json";
+import certTapThumb from "@/assets/shabaz-cert-tap-thumb.asset.json";
+import certIsoftPdf from "@/assets/shabaz-cert-isoft.asset.json";
+import certIsoftThumb from "@/assets/shabaz-cert-isoft-thumb.asset.json";
+import certPowerbiPdf from "@/assets/shabaz-cert-powerbi.asset.json";
+import certPowerbiThumb from "@/assets/shabaz-cert-powerbi-thumb.asset.json";
+import certSqlPdf from "@/assets/shabaz-cert-sql.asset.json";
+import certSqlThumb from "@/assets/shabaz-cert-sql-thumb.asset.json";
+import certPythonWsPdf from "@/assets/shabaz-cert-python-ws.asset.json";
+import certPythonWsThumb from "@/assets/shabaz-cert-python-ws-thumb.asset.json";
+import certEazyPdf from "@/assets/shabaz-cert-eazy.asset.json";
+import certEazyThumb from "@/assets/shabaz-cert-eazy-thumb.asset.json";
+import certEtgImg from "@/assets/shabaz-cert-etg.asset.json";
+import certGuviImg from "@/assets/shabaz-cert-guvi.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -81,6 +95,17 @@ const skillGroups = [
   { label: "Automation", items: ["Selenium", "BeautifulSoup", "Pandas", "ETL", "Multithreading", "OpenPyXL"] },
   { label: "Web & Data", items: ["Flask", "Jinja2", "PostgreSQL", "MySQL", "SQLite", "SQLAlchemy"] },
   { label: "Vision & Tools", items: ["OpenCV", "YOLOv8", "EasyOCR", "Git", "GitHub", "Tkinter"] },
+];
+
+const certificates = [
+  { title: "Full Stack Web Development", issuer: "TAP Academy", date: "Jan 2024", thumb: certTapThumb.url, file: certTapPdf.url },
+  { title: "Python with Django", issuer: "iSoft", date: "Feb 2023", thumb: certIsoftThumb.url, file: certIsoftPdf.url },
+  { title: "Power BI Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPowerbiThumb.url, file: certPowerbiPdf.url },
+  { title: "SQL Workshop", issuer: "Certificate of Participation", date: "Nov 2021", thumb: certSqlThumb.url, file: certSqlPdf.url },
+  { title: "Python Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPythonWsThumb.url, file: certPythonWsPdf.url },
+  { title: "Guinness World Record Event — Online Programming Lesson", issuer: "GUVI", date: "Apr 2021", thumb: certGuviImg.url, file: certGuviImg.url },
+  { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgImg.url },
+  { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Participation", thumb: certEazyThumb.url, file: certEazyPdf.url },
 ];
 
 const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
