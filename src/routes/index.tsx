@@ -105,7 +105,7 @@ const certificates = [
   { title: "Python Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPythonWsThumb.url, file: certPythonWsPdf.url },
   { title: "Guinness World Record Event — Online Programming Lesson", issuer: "GUVI", date: "Apr 2021", thumb: certGuviImg.url, file: certGuviImg.url },
   { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgImg.url },
-  { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Participation", thumb: certEazyThumb.url, file: certEazyPdf.url },
+  { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Webinar", thumb: certEazyThumb.url, file: certEazyPdf.url },
 ];
 
 const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
@@ -221,6 +221,25 @@ function Index() {
               <div className="flex items-center gap-3"><span className="font-mono text-xs text-primary">0{index + 1}</span><h3 className="font-display text-xl font-semibold">{group.label}</h3></div>
               <ul className="mt-7 space-y-3 text-sm text-muted-foreground">{group.items.map((skill) => <li key={skill} className="flex items-center gap-2"><span className="h-px w-3 bg-primary" />{skill}</li>)}</ul>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="certificates" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+        <SectionHeading title="Certificates" text="Trainings, workshops, and programs completed along the way — click any card to view the original." />
+        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          {certificates.map((cert) => (
+            <a key={cert.title} href={cert.file} target="_blank" rel="noreferrer" className="group flex flex-col bg-card p-6 transition-colors hover:bg-secondary/80">
+              <div className="overflow-hidden border border-border bg-background">
+                <img src={cert.thumb} alt={`${cert.title} certificate`} loading="lazy" className="aspect-[4/3] w-full object-contain p-3 transition-transform duration-300 group-hover:scale-[1.04]" />
+              </div>
+              <div className="mt-6 flex items-center justify-between font-mono text-[11px] uppercase text-muted-foreground">
+                <span>{cert.date}</span>
+                <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
+              </div>
+              <h3 className="mt-3 font-display text-lg font-semibold leading-snug">{cert.title}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{cert.issuer}</p>
+            </a>
           ))}
         </div>
       </section>
