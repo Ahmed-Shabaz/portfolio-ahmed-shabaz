@@ -124,6 +124,7 @@ function Index() {
             <a className="transition-colors hover:text-primary" href="#work">Work</a>
             <a className="transition-colors hover:text-primary" href="#experience">Experience</a>
             <a className="transition-colors hover:text-primary" href="#skills">Skills</a>
+            <a className="transition-colors hover:text-primary" href="#certificates">Certificates</a>
             <a className="transition-colors hover:text-primary" href="#contact">Contact</a>
           </nav>
           <Button asChild variant="outline" size="sm" className="border-primary/50 bg-background/50 text-primary hover:bg-primary hover:text-primary-foreground">
@@ -141,7 +142,7 @@ function Index() {
         </h1>
         <div className="mt-10 grid w-full gap-8 border-t border-border pt-8 text-left lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <div className="mb-6 size-40 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-48 lg:size-64">
+            <div className="mb-6 size-44 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-52 lg:size-72">
               <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
             </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
