@@ -15,7 +15,21 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import resumeAsset from "@/assets/Shabaz_Ahmed_Automation_Engineer.pdf.asset.json";
-import photoAsset from "@/assets/shabaz-ahmed.jpg.asset.json";
+import photoAsset from "@/assets/shabaz-ahmed.png.asset.json";
+import certTapPdf from "@/assets/shabaz-cert-tap.asset.json";
+import certTapThumb from "@/assets/shabaz-cert-tap-thumb.asset.json";
+import certIsoftPdf from "@/assets/shabaz-cert-isoft.asset.json";
+import certIsoftThumb from "@/assets/shabaz-cert-isoft-thumb.asset.json";
+import certPowerbiPdf from "@/assets/shabaz-cert-powerbi.asset.json";
+import certPowerbiThumb from "@/assets/shabaz-cert-powerbi-thumb.asset.json";
+import certSqlPdf from "@/assets/shabaz-cert-sql.asset.json";
+import certSqlThumb from "@/assets/shabaz-cert-sql-thumb.asset.json";
+import certPythonWsPdf from "@/assets/shabaz-cert-python-ws.asset.json";
+import certPythonWsThumb from "@/assets/shabaz-cert-python-ws-thumb.asset.json";
+import certEazyPdf from "@/assets/shabaz-cert-eazy.asset.json";
+import certEazyThumb from "@/assets/shabaz-cert-eazy-thumb.asset.json";
+import certEtgImg from "@/assets/shabaz-cert-etg.asset.json";
+import certGuviImg from "@/assets/shabaz-cert-guvi.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -83,6 +97,17 @@ const skillGroups = [
   { label: "Vision & Tools", items: ["OpenCV", "YOLOv8", "EasyOCR", "Git", "GitHub", "Tkinter"] },
 ];
 
+const certificates = [
+  { title: "Full Stack Web Development", issuer: "TAP Academy", date: "Jan 2024", thumb: certTapThumb.url, file: certTapPdf.url },
+  { title: "Python with Django", issuer: "iSoft", date: "Feb 2023", thumb: certIsoftThumb.url, file: certIsoftPdf.url },
+  { title: "Power BI Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPowerbiThumb.url, file: certPowerbiPdf.url },
+  { title: "SQL Workshop", issuer: "Certificate of Participation", date: "Nov 2021", thumb: certSqlThumb.url, file: certSqlPdf.url },
+  { title: "Python Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPythonWsThumb.url, file: certPythonWsPdf.url },
+  { title: "Guinness World Record Event — Online Programming Lesson", issuer: "GUVI", date: "Apr 2021", thumb: certGuviImg.url, file: certGuviImg.url },
+  { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgImg.url },
+  { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Webinar", thumb: certEazyThumb.url, file: certEazyPdf.url },
+];
+
 const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
 
 function Index() {
@@ -99,6 +124,7 @@ function Index() {
             <a className="transition-colors hover:text-primary" href="#work">Work</a>
             <a className="transition-colors hover:text-primary" href="#experience">Experience</a>
             <a className="transition-colors hover:text-primary" href="#skills">Skills</a>
+            <a className="transition-colors hover:text-primary" href="#certificates">Certificates</a>
             <a className="transition-colors hover:text-primary" href="#contact">Contact</a>
           </nav>
           <Button asChild variant="outline" size="sm" className="border-primary/50 bg-background/50 text-primary hover:bg-primary hover:text-primary-foreground">
@@ -116,7 +142,7 @@ function Index() {
         </h1>
         <div className="mt-10 grid w-full gap-8 border-t border-border pt-8 text-left lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <div className="mb-6 size-40 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-48 lg:size-64">
+            <div className="mb-6 size-44 overflow-hidden rounded-full border-2 border-primary/50 bg-card p-1 sm:size-52 lg:size-72">
               <img src={photoAsset.url} alt="Shabaz Ahmed" className="size-full rounded-full object-cover" />
             </div>
             <p className="font-mono text-sm uppercase text-accent">Automation Engineer</p>
@@ -195,6 +221,25 @@ function Index() {
               <div className="flex items-center gap-3"><span className="font-mono text-xs text-primary">0{index + 1}</span><h3 className="font-display text-xl font-semibold">{group.label}</h3></div>
               <ul className="mt-7 space-y-3 text-sm text-muted-foreground">{group.items.map((skill) => <li key={skill} className="flex items-center gap-2"><span className="h-px w-3 bg-primary" />{skill}</li>)}</ul>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="certificates" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+        <SectionHeading title="Certificates" text="Trainings, workshops, and programs completed along the way — click any card to view the original." />
+        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          {certificates.map((cert) => (
+            <a key={cert.title} href={cert.file} target="_blank" rel="noreferrer" className="group flex flex-col bg-card p-6 transition-colors hover:bg-secondary/80">
+              <div className="overflow-hidden border border-border bg-background">
+                <img src={cert.thumb} alt={`${cert.title} certificate`} loading="lazy" className="aspect-[4/3] w-full object-contain p-3 transition-transform duration-300 group-hover:scale-[1.04]" />
+              </div>
+              <div className="mt-6 flex items-center justify-between font-mono text-[11px] uppercase text-muted-foreground">
+                <span>{cert.date}</span>
+                <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
+              </div>
+              <h3 className="mt-3 font-display text-lg font-semibold leading-snug">{cert.title}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{cert.issuer}</p>
+            </a>
           ))}
         </div>
       </section>
