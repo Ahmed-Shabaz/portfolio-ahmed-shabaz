@@ -30,6 +30,19 @@ import certEazyPdf from "@/assets/shabaz-cert-eazy.asset.json";
 import certEazyThumb from "@/assets/shabaz-cert-eazy-thumb.asset.json";
 import certEtgImg from "@/assets/shabaz-cert-etg.asset.json";
 import certGuviImg from "@/assets/shabaz-cert-guvi.asset.json";
+import certCatiaImg from "@/assets/shabaz-cert-catia.asset.json";
+import certFormulaImg from "@/assets/shabaz-cert-formula.asset.json";
+import certSpringImg from "@/assets/shabaz-cert-spring.asset.json";
+import certGdtImg from "@/assets/shabaz-cert-gdt.asset.json";
+import certMechismosImg from "@/assets/shabaz-cert-mechismos.asset.json";
+import certStartupImg from "@/assets/shabaz-cert-startup.asset.json";
+import certEng1Pdf from "@/assets/shabaz-cert-eng1.asset.json";
+import certEng1Thumb from "@/assets/shabaz-cert-eng1-thumb.asset.json";
+import certEng2Pdf from "@/assets/shabaz-cert-eng2.asset.json";
+import certEng2Thumb from "@/assets/shabaz-cert-eng2-thumb.asset.json";
+import certAiPdf from "@/assets/shabaz-cert-ai.asset.json";
+import certAiThumb from "@/assets/shabaz-cert-ai-thumb.asset.json";
+import awardStarImg from "@/assets/shabaz-award-star.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -106,6 +119,15 @@ const certificates = [
   { title: "Guinness World Record Event — Online Programming Lesson", issuer: "GUVI", date: "Apr 2021", thumb: certGuviImg.url, file: certGuviImg.url },
   { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgImg.url },
   { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Webinar", thumb: certEazyThumb.url, file: certEazyPdf.url },
+  { title: "CATIA V5 Professional Training", issuer: "MIT Mysore × Sri Manjunatha Design Solutions", date: "Feb 2020", thumb: certCatiaImg.url, file: certCatiaImg.url },
+  { title: "Formula Race Car Design & Development Internship", issuer: "Elite Techno Groups", date: "Feb 2020", thumb: certFormulaImg.url, file: certFormulaImg.url },
+  { title: "Spring Process Internship", issuer: "Hindustan Spring Mfg. Co.", date: "Apr 2022", thumb: certSpringImg.url, file: certSpringImg.url },
+  { title: "Geometric Dimensioning & Tolerance Training", issuer: "MIT Mysore × Visionurgy Technologies", date: "Apr 2022", thumb: certGdtImg.url, file: certGdtImg.url },
+  { title: "MECHISMOS TECH-2022 Project Exhibition", issuer: "MIT Mysore · State-Level Inter-Collegiate", date: "Jul 2022", thumb: certMechismosImg.url, file: certMechismosImg.url },
+  { title: "Start-Up Ideas, Schemes & Opportunities — Webinar", issuer: "MIT Mysore, Dept. of Mechanical Engineering", date: "Aug 2020", thumb: certStartupImg.url, file: certStartupImg.url },
+  { title: "Digital Skills: Artificial Intelligence", issuer: "FutureLearn × Accenture", date: "Aug 2021", thumb: certAiThumb.url, file: certAiPdf.url },
+  { title: "Basic English 1: Elementary", issuer: "FutureLearn × King's College London", date: "Jul 2021", thumb: certEng1Thumb.url, file: certEng1Pdf.url },
+  { title: "Basic English 2: Pre-Intermediate", issuer: "FutureLearn × King's College London", date: "Jul 2021", thumb: certEng2Thumb.url, file: certEng2Pdf.url },
 ];
 
 const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
