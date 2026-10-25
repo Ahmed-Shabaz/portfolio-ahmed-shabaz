@@ -279,6 +279,10 @@ function Index() {
             <h2 className="mt-3 font-display text-2xl font-semibold">Star of the Month</h2>
             <p className="mt-2 text-muted-foreground">Bluemind Solutions · November 2024</p>
             <p className="mt-4 text-sm text-muted-foreground">2nd Place, State-Level Inter-Collegiate Project Exhibition</p>
+            <a href={awardStarImg.url} target="_blank" rel="noreferrer" className="group mt-7 block overflow-hidden border border-border bg-background">
+              <img src={awardStarImg.url} alt="Star of the Month award certificate from Bluemind Solutions" loading="lazy" className="w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
+            </a>
+            <p className="mt-2 font-mono text-[11px] uppercase text-muted-foreground">Click to view the award</p>
           </div>
         </div>
       </section>
