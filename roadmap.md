@@ -14,4 +14,4 @@
 - [x] Add Certificates section with first 8 certificates
 - [x] Add 9 new certificates (CATIA V5, Formula racecar internship, Spring Process internship, GD&T training, MECHISMOS exhibition, Start-up webinar, 2 FutureLearn English, AI course)
 - [x] Show Star of the Month award certificate in Recognition
-- [ ] Publish updated site
+- [x] Publish updated site
