@@ -29,6 +29,7 @@ import certPythonWsThumb from "@/assets/shabaz-cert-python-ws-thumb.asset.json";
 import certEazyPdf from "@/assets/shabaz-cert-eazy.asset.json";
 import certEazyThumb from "@/assets/shabaz-cert-eazy-thumb.asset.json";
 import certEtgImg from "@/assets/shabaz-cert-etg.asset.json";
+import certEtgPdf from "@/assets/shabaz-cert-etg-pdf.asset.json";
 import certGuviImg from "@/assets/shabaz-cert-guvi.asset.json";
 import certCatiaImg from "@/assets/shabaz-cert-catia.asset.json";
 import certFormulaImg from "@/assets/shabaz-cert-formula.asset.json";
@@ -121,7 +122,7 @@ const certificates = [
   { title: "SQL Workshop", issuer: "Certificate of Participation", date: "Nov 2021", thumb: certSqlThumb.url, file: certSqlPdf.url },
   { title: "Python Workshop", issuer: "Certificate of Participation", date: "Oct 2021", thumb: certPythonWsThumb.url, file: certPythonWsPdf.url },
   { title: "Guinness World Record Event — Online Programming Lesson", issuer: "GUVI", date: "Apr 2021", thumb: certGuviImg.url, file: certGuviImg.url },
-  { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgImg.url },
+  { title: "Demand for Skilled Engineers in EV Industry — Webinar", issuer: "MIT Mysore × Elite Techno Groups", date: "Aug 2020", thumb: certEtgImg.url, file: certEtgPdf.url },
   { title: "Career Guidance Program for Engineering Graduates — Webinar", issuer: "Eazy BTech", date: "Webinar", thumb: certEazyThumb.url, file: certEazyPdf.url },
   { title: "CATIA V5 Professional Training", issuer: "MIT Mysore × Sri Manjunatha Design Solutions", date: "Feb 2020", thumb: certCatiaImg.url, file: certCatiaImg.url },
   { title: "Formula Race Car Design & Development Internship", issuer: "Elite Techno Groups", date: "Feb 2020", thumb: certFormulaImg.url, file: certFormulaImg.url },
