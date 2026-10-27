@@ -40,8 +40,10 @@ import certEng1Pdf from "@/assets/shabaz-cert-eng1.asset.json";
 import certEng1Thumb from "@/assets/shabaz-cert-eng1-thumb.asset.json";
 import certEng2Pdf from "@/assets/shabaz-cert-eng2.asset.json";
 import certEng2Thumb from "@/assets/shabaz-cert-eng2-thumb.asset.json";
-import certAiPdf from "@/assets/shabaz-cert-ai.asset.json";
-import certAiThumb from "@/assets/shabaz-cert-ai-thumb.asset.json";
+import certBiteImg from "@/assets/shabaz-cert-bite.asset.json";
+import certClgeImg from "@/assets/shabaz-cert-clge.asset.json";
+import cert40Pdf from "@/assets/shabaz-cert-40tech.asset.json";
+import cert40Thumb from "@/assets/shabaz-cert-40tech-thumb.asset.json";
 import awardStarImg from "@/assets/shabaz-award-star.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -125,9 +127,12 @@ const certificates = [
   { title: "Geometric Dimensioning & Tolerance Training", issuer: "MIT Mysore × Visionurgy Technologies", date: "Apr 2022", thumb: certGdtImg.url, file: certGdtImg.url },
   { title: "MECHISMOS TECH-2022 Project Exhibition", issuer: "MIT Mysore · State-Level Inter-Collegiate", date: "Jul 2022", thumb: certMechismosImg.url, file: certMechismosImg.url },
   { title: "Start-Up Ideas, Schemes & Opportunities — Webinar", issuer: "MIT Mysore, Dept. of Mechanical Engineering", date: "Aug 2020", thumb: certStartupImg.url, file: certStartupImg.url },
+  { title: "4.0 Tech Online Bootcamp (AI & ML, Cyber Security, IoT, Data Science, AR & VR, Blockchain, Full Stack)", issuer: "NxtWave CCBP 4.0", date: "Jul 2021", thumb: cert40Thumb.url, file: cert40Pdf.url },
   { title: "Digital Skills: Artificial Intelligence", issuer: "FutureLearn × Accenture", date: "Aug 2021", thumb: certAiThumb.url, file: certAiPdf.url },
   { title: "Basic English 1: Elementary", issuer: "FutureLearn × King's College London", date: "Jul 2021", thumb: certEng1Thumb.url, file: certEng1Pdf.url },
   { title: "Basic English 2: Pre-Intermediate", issuer: "FutureLearn × King's College London", date: "Jul 2021", thumb: certEng2Thumb.url, file: certEng2Pdf.url },
+  { title: "BITE '21 — Design F1 Mercedes Race Car's Steering System", issuer: "Elite Techno Groups", date: "Jul 2021", thumb: certBiteImg.url, file: certBiteImg.url },
+  { title: "Pre-Requisites to be a Design Engineer — Webinar", issuer: "MIT Mysore, Dept. of Mechanical Engineering", date: "May 2021", thumb: certClgeImg.url, file: certClgeImg.url },
 ];
 
 const NetworkBackground = lazy(() => import("@/components/NetworkBackground"));
@@ -278,7 +283,6 @@ function Index() {
             <Award className="size-7 text-accent" /><p className="mt-7 section-kicker">Recognition</p>
             <h2 className="mt-3 font-display text-2xl font-semibold">Star of the Month</h2>
             <p className="mt-2 text-muted-foreground">Bluemind Solutions · November 2024</p>
-            <p className="mt-4 text-sm text-muted-foreground">2nd Place, State-Level Inter-Collegiate Project Exhibition</p>
             <a href={awardStarImg.url} target="_blank" rel="noreferrer" className="group mt-7 block overflow-hidden border border-border bg-background">
               <img src={awardStarImg.url} alt="Star of the Month award certificate from Bluemind Solutions" loading="lazy" className="w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
             </a>
