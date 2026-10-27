@@ -15,3 +15,6 @@
 - [x] Add 9 new certificates (CATIA V5, Formula racecar internship, Spring Process internship, GD&T training, MECHISMOS exhibition, Start-up webinar, 2 FutureLearn English, AI course)
 - [x] Show Star of the Month award certificate in Recognition
 - [x] Publish updated site
+- [x] Remove "2nd Place, State-Level Inter-Collegiate Project Exhibition" line
+- [x] Add 3 new certificates (BITE '21 F1 steering, MIT Mysore design-engineer webinar, NxtWave 4.0 Tech bootcamp); skipped duplicate ETG PDF
+- [x] Publish updated site
