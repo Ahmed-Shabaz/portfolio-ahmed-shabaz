@@ -44,6 +44,8 @@ import certBiteImg from "@/assets/shabaz-cert-bite.asset.json";
 import certClgeImg from "@/assets/shabaz-cert-clge.asset.json";
 import cert40Pdf from "@/assets/shabaz-cert-40tech.asset.json";
 import cert40Thumb from "@/assets/shabaz-cert-40tech-thumb.asset.json";
+import certAiPdf from "@/assets/shabaz-cert-ai.asset.json";
+import certAiThumb from "@/assets/shabaz-cert-ai-thumb.asset.json";
 import awardStarImg from "@/assets/shabaz-award-star.asset.json";
 
 export const Route = createFileRoute("/")({
